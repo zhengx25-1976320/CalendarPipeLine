@@ -1,5 +1,4 @@
 package com.example.calendarpipeline;
-
 public class CalendarDataStruct {
 
     String eventTitle = "";

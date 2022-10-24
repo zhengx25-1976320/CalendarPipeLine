@@ -6,86 +6,122 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center">
 
-        <EditText
-            android:id="@+id/start_date_input"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:hint="Start Date, for example 20220420"
-            android:text="20220426"/>
-        <EditText
-            android:id="@+id/start_time_input"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:hint="Start Time, for example 1740"
-            android:text="1600"/>
-        <EditText
-            android:id="@+id/end_date_input"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:hint="Start Date, for example 20220420"
-            android:text="20220426"/>
-        <EditText
-            android:id="@+id/end_time_input"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:hint="Start Time, for example 1740"
-            android:text="1800"/>
-        <EditText
-            android:id="@+id/event_name_input"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:hint="Event name"
-            android:text="test event"/>
-        <EditText
-            android:id="@+id/event_duration_input"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:hint="Event duration time in minutes"
+<!--        <EditText-->
+<!--            android:id="@+id/start_date_input"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Start Date, for example 20220420"-->
+<!--            android:text="20220426"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/start_time_input"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Start Time, for example 1740"-->
+<!--            android:text="1600"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/end_date_input"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Start Date, for example 20220420"-->
+<!--            android:text="20220426"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/end_time_input"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Start Time, for example 1740"-->
+<!--            android:text="1800"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/event_name_input"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Event name"-->
+<!--            android:text="test event"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/event_duration_input"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Event duration time in minutes"-->
             android:text="20"/>
-        <TextView
-            android:id="@+id/time_slot"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="show valid start time"/>
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--        <TextView-->
+<!--            android:id="@+id/time_slot"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="show valid start time"/>-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center">
 
-            <Button
-                android:id="@+id/show_button"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:gravity="center"
-                android:text="click to show time slot"/>
-            <Button
-                android:id="@+id/write_button"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:gravity="center"
-                android:text="click to write to calender"/>
+<!--            <Button-->
+<!--                android:id="@+id/show_button"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="click to show time slot"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/write_button"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="click to write to calender"/>-->
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:backgroundTint="#F9F8FA"
-                android:paddingRight="10dp"
-                android:src="@drawable/ic_mic_black_off"
-                android:clickable="true"
+                android:id="@+id/mic_button"
+                android:layout_width="421dp"
+                android:layout_height="132dp"
                 android:layout_alignParentRight="true"
-                android:id="@+id/mic_button"/>
+                android:backgroundTint="#F9F8FA"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_mic_black_off" />
+
+
+            <!--            <LinearLayout-->
+            <!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:background="#4caf50"-->
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="vertical">-->
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="sans-serif-black"-->
+            <!--                android:text="Latitude:" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/latTextView"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Latitude will be here! "-->
+            <!--                android:textColor="#f5f5f5" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="sans-serif-black"-->
+            <!--                android:text="Longitude:" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/lonTextView"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Longitude will be here! "-->
+            <!--                android:textColor="#f5f5f5" />-->
+            <!--            </LinearLayout>-->
         </LinearLayout>
     </LinearLayout>
 

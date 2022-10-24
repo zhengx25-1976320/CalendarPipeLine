@@ -27,6 +27,21 @@ android {
                 install "pandas"
                 install "datetime"
                 install "datefinder"
+                install "parsedatetime"
+                install "word2number"
+                install "geopy"
+                install "google-api-python-client"
+                install "selectorlib"
+                install "bs4"
+                install "httpx"
+                install "ebaysdk"
+//                install "asyncio"
+
+//                install "googleapiclient"
+//                install "pytorch"
+//                install "transformers"
+//                install "git+https://github.com/huggingface/transformers"
+//                install "https://files.pythonhosted.org/packages/12/57/da0cb8e40437f88630769164a66afec8af294ff686661497b6c88bc08556/tokenizers-0.12.1.tar.gz"
             }
         }
 
@@ -57,4 +72,9 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
